@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">The big James survey</h1>
+    <p id="description">Thanks for checking it out</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">Enter your name: <input id="name" type="text" placeholder="James" required /></label>
+        <label id="email-label" for="email">Enter your email: <input id="email" type="email" placeholder="james@google.com" required /></label>
+        <label id="number-label" for="age">Age (optional) <input id="number" type="number" name="age" min="13" max="100" placeholder="15" /><label>
+          <label for="current-role">Which option best describes your current role?
+            <select id="dropdown" name="dropdown">
+              <option value="0">(select one)</option>
+              <option value="1">Student</option>
+              <option value="2">Employed</option>
+              </select>
+              </label>
+              <legend>Favourite Movie (required)</legend>
+        <label for="Oppenheimer-movie"><input id="Oppenheimer" type="radio" value="Oppenheimer" name="fav-movie" class="inline" checked /> Oppenheimer</label>
+        <label for="Barbie-movie"><input id="Barbie-movie" type="radio" value="Barbie" name="fav-movie" class="inline" />Barbie</label>
+        <legend>What's your personality like</legend>
+            <input id="loving" type="checkbox" name="personality" value="loving" checked> <label for="loving">Loving</label>
+            <input id="lazy" type="checkbox" name="personality" value="lazy"> <label for="lazy">Lazy</label>
+    <input id="energetic" type="checkbox" name="personality" value="energetic"> <label for="energetic">Energetic</label>
+    <p>
+    <label for="bio">Provide a bio:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+        </label>
+        <input id="submit" type="submit" value="submit"/>
+      </form>
+      </body>
